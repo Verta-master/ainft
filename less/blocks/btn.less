@@ -1,0 +1,36 @@
+.btn {
+  position: relative;
+  z-index: 10;
+  width: 167px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 27px;
+  background-color: #19112F;
+//  background-image: radial-gradient(circle at 100% 100%, transparent 27px, #ff3bed 27px, #ff3bed 29px, transparent 29px), linear-gradient(to right, #ff3bed, #8952ff), radial-gradient(circle at 0% 100%, transparent 27px, #8952ff 27px, #8952ff 29px, transparent 29px), linear-gradient(to bottom, #8952ff, #8952ff), radial-gradient(circle at 0% 0%, transparent 27px, #8952ff 27px, #8952ff 29px, transparent 29px), linear-gradient(to left, #8952ff, #ff3bed), radial-gradient(circle at 100% 0%, transparent 27px, #ff3bed 27px, #ff3bed 29px, transparent 29px), linear-gradient(to top, #ff3bed, #ff3bed);
+//  background-size: 29px 29px, calc(100% - 58px) 2px, 29px 29px, 2px calc(100% - 58px);
+//  background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+//  background-repeat: no-repeat;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    border-radius: 27px;
+    background-image: linear-gradient(to right, #ff3bed, #8952ff);
+  }
+}

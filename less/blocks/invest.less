@@ -1,0 +1,53 @@
+.invest {
+  overflow: hidden;
+  
+  .wrapper {
+    position: relative;
+    padding-bottom: 184px;
+  }
+}
+.invest__btn {
+  width: 208px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+.invest__drop {
+  position: absolute;
+  
+  &--right {
+    width: 120px;
+    transform: scaleX(-1);
+    right: -30px;
+    bottom: 60px;
+  }
+  &--left {
+    width: 190px;
+    transform: scaleX(-1);
+    left: -78px;
+    bottom: 60px;
+  }
+  &--round1 {
+    width: 34px;
+    left: -8px;
+    top: 0;
+  }
+  &--round2 {
+    width: 26px;
+    right: 16px;
+    top: 9px;
+    transform: rotate(90deg);
+  }
+  &--round3 {
+    width: 18px;
+    right: 44px;
+    bottom: 241px;
+    transform: rotate(180deg);
+  }
+  &--round4 {
+    width: 12px;
+    bottom: 132px;
+    left: 149px;
+    transform: rotate(-90deg);
+  }
+}

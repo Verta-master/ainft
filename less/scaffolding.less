@@ -1,0 +1,158 @@
+body {
+  width: 100%;
+  max-width: 100%;
+  min-width: 360px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #fff;
+  background-color: #19112F;
+  background-image: url(../img/images/bg-dots.svg);
+  background-repeat: repeat-y;
+  background-position: center;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main a,
+footer a {
+  text-decoration: underline;
+  color: #8A7FA8;
+  text-decoration-line: underline;
+  
+  &:hover,
+  &:active {
+    text-decoration: none;
+    color: #8952FF;
+  }
+}
+
+address {
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+figure {
+  .reset();
+}
+form,
+select,
+textarea,
+input,
+button {
+  font: inherit;
+  border: none;
+  outline: none;
+  font-family: "Montserrat", "Arial", sans-serif;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.privacy_policy {    
+	padding: 10px;
+	border-top:3px solid #5CA94E;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 500;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+}
+
+.privacy_policy a {
+	color: #5CA94E; 
+	font-weight: bold;
+}
+
+.privacy_policy .button {
+	color: #F95454;
+	cursor: pointer;
+}
+h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  
+  span {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 30px;
+    color: #FF3BED;
+  }
+}
+h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+}
+.subtitle {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  
+  &--blur {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 360px;
+      height: 360px;
+      background-image: url(../img/images/header-bg-blur.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+@media(min-width:1920px) {
+  body {
+    font-size: 18px;
+  }
+}

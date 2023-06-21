@@ -1,0 +1,36 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding-top: 20px;
+}
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu {
+  display: block;
+  width: 28px;
+  height: 28px;
+  
+  svg {
+    fill: #fff;
+  }
+  &--close {
+    .header__open {
+      display: none;
+    }
+    .header__close {
+      display: block;
+    }
+  }
+}
+.header__close {
+  display: none;
+}
+.logo img {
+  display: block;
+}

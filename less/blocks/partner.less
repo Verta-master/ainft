@@ -1,0 +1,109 @@
+.partner {
+  position: relative;
+  margin-bottom: 100px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 420px;
+    background-color: rgba(255,255,255,0.05);
+  }
+  h2 {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+}
+.partner__slide {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  background: #302649;
+  border-radius: 20px;
+}
+.partner__goal {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  color: #FF3BED;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+}
+.partner__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+}
+.partner__btn {
+  width: 205px;
+  margin-top: auto;
+  
+  span {
+    position: relative;
+    padding-right: 18px;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      right: 0;
+      width: 8px;
+      height: 9px;
+      background-image: url(../img/icons/play.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+.partner__slider {
+  position: relative;
+  
+  .owl-stage-outer {
+    padding-left: 20px;
+  }
+  .owl-item {
+    display: flex;
+    height: auto !important;
+  }
+  .owl-stage {
+    display: flex;
+  }
+  .owl-nav button.owl-next,
+  .owl-nav button.owl-prev {
+    position: absolute;
+    top: auto;
+    bottom: 30px;
+    width: 54px;
+    height: 54px;
+    margin: 0;
+    background-image: url(../img/icons/arrow-next.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+  }
+  .owl-nav [class*=owl-]:hover,
+  .owl-nav [class*=owl-]:active {
+    background: rgba(255,255,255,0);
+    background-image: url(../img/icons/arrow-hover.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .owl-nav button.owl-next {
+    right: 40px;
+  }
+  .owl-nav button.owl-prev {
+    display: none;
+    transform: rotate(180deg);
+  }
+}
+.partner__number {
+  display: none;
+}

@@ -1,0 +1,50 @@
+.benefits {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: rgba(255,255,255,0.05);
+}
+.benefits__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  color: #8A7FA8;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+}
+.benefits__list {
+  .reset();
+  counter-reset: myCounter;
+  list-style-type: none;
+  
+  li {
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    border-bottom: 1px dashed #8A7FA8;
+    
+    &::before {
+      counter-increment: myCounter;
+      content: "//0" counter(myCounter);
+      display: block;
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 1;
+      letter-spacing: 0.1em;
+      color: #FF3BED;
+      font-family: "Bebas Neue", "Arial", sans-serif;
+    }
+    &:nth-child(2)::before {
+      color: #DB43F3;
+    }
+    &:nth-child(3)::before {
+      color: #B34AF9;
+    }
+    &:nth-child(4)::before {
+      color: #8952FF;
+    }
+  }
+}

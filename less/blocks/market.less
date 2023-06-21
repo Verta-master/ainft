@@ -1,0 +1,43 @@
+.market {
+  margin-bottom: 91px;
+  
+  h2 {
+    text-align: left;
+  }
+}
+.market__subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+blockquote {
+  .reset();
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  
+  b {
+    font-weight: 700;
+    color: #8952FF;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 4px;
+    background: linear-gradient(180deg, #FF3BED 0%, #8952FF 100%);
+    border-radius: 2px;
+  }
+}
+.market__img {
+  display: block;
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}

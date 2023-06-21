@@ -1,0 +1,120 @@
+.scope {
+  margin-bottom: 100px;
+  
+  h2 {
+    text-align: left;
+    max-width: 190px;
+  }
+}
+.scope__slide {
+  width: 180px;
+}
+.scope__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #fff;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: #8952FF;
+    .transition();
+    
+    .scope__img {
+      background: #302649;
+      .transition();
+    }
+  }
+}
+.scope__img {
+  width: 100%;
+  height: 180px;
+  padding: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #251D39;
+  border-radius: 20px;
+  .transition();
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+  }
+}
+.scope__title {
+  margin-top: 0;
+  text-align: center;
+  line-height: 20px;
+  font-weight: 400;
+}
+.scope__slider {
+  margin-top: 21px;
+  
+  .owl-stage-outer {
+    padding-left: 20px;
+  }
+  .owl-nav button.owl-next,
+  .owl-nav button.owl-prev {
+    position: absolute;
+    top: -81px;
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    border-radius: 50%;
+    background-image: url(../img/icons/next.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .owl-nav [class*=owl-]:hover,
+  .owl-nav [class*=owl-]:active {
+    background-image: url(../img/icons/next-hover.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .owl-nav button.owl-next {
+    right: 20px;
+  }
+  .owl-nav button.owl-prev {
+    right: 78px;
+    transform: rotate(180deg);
+  }
+}
+.scope__modal {
+  padding: 60px 46px;
+  text-align: center;
+  line-height: 26px;
+  background: #302649;
+  border-radius: 20px;
+}
+.scope__pic {
+  width: 300px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.scope__name {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+}
+.scope__btn {
+  width: 218px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+.fancybox-close-small svg {
+  opacity: 1;
+  stroke: #fff;
+}
+.fancybox-is-open .fancybox-bg {
+  background: rgba(25, 17, 47, 0.6);
+  opacity: 1;
+}
