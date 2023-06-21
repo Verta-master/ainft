@@ -76,7 +76,7 @@
                 </a>
               </li>
             </ul>
-            <a href="#" class="btn menu__btn">Обратная связь</a>
+            <a data-fancybox data-src="#call" href="javascript:;" class="btn menu__btn">Обратная связь</a>
           </div>
         </li>
       </ul>
@@ -483,6 +483,25 @@
       </div>
     </div>
   </footer>
+  
+  <!-- Modal windows -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">Обратная связь</p>
+    <form action="#" class="form">
+      <input type="text" class="form__input" placeholder="имя">
+      <input type="text" class="form__input" placeholder="ваш город">
+      <input type="email" class="form__input" placeholder="электронная почта">
+      <input type="tel" class="form__input" placeholder="номер телефона">
+      <textarea class="form__message" placeholder="ваше сообщение"></textarea>
+      <button type="submit" class="form__btn">отправить</button>
+      <a href="#" class="form__privacy">Согласие на обработку персональных данных</a>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="final" class="modal">
+    <p class="modal__title">Ваше сообщение отправлено</p>
+    <p>Наш менеджер свяжется с вами в ближайшее время</p>
+  </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
