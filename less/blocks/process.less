@@ -128,9 +128,15 @@
 //------------------------------------------
 @media(min-width: 640px) {
   .process {
+    margin-bottom: 106px;
+    
     .subtitle--blur::before {
       top: -50px;
       transform: translateX(-50%);
+    }
+    .subtitle--blur {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
   .process__img {
@@ -142,14 +148,22 @@
   .process__item:first-child {
     text-align: center;
     margin-bottom: 188px;
+    padding-left: 70px;
     
+    p {
+      margin-top: 0;
+    }
     .process__title {
       text-align: center;
     }
   }
   .process__item:nth-child(2) {
     padding-right: 120px;
-    margin-bottom: 81px;
+    margin-bottom: 69px;
+    
+    .process__title {
+      padding-right: 20px;
+    }
   }
   .process__tags {
     justify-content: flex-start;
@@ -170,7 +184,7 @@
   }
   .process__item:nth-child(3) {
     padding-left: 198px;
-    margin-bottom: 165px;
+    margin-bottom: 163px;
     
     .process__title {
       text-align: left;
@@ -182,5 +196,55 @@
     .process__title {
       text-align: left;
     }
+  }
+}
+//------------------------------------------
+@media(min-width: 960px) {
+  .process__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding-top: 0;
+  }
+  .process__item {
+    width: 402px;
+  }
+  .process__item:first-child {
+    padding-left: 0;
+    margin-bottom: 260px;
+    margin-left: 14px;
+    margin-right: auto;
+    padding-bottom: 10px;
+    width: 220px;
+    order: 1;
+    
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .process__item:nth-child(2) {
+    padding-right: 0;
+    margin-bottom: 260px;
+    order: 2;
+    width: 430px;
+  }
+  .process__item:nth-child(3) {
+    padding-left: 0;
+    margin-bottom: 0;
+    order: 4;
+  }
+  .process__item:last-child {
+    padding-right: 0;
+    order: 3;
+  }
+  .process .subtitle--blur::before {
+    top: 100%;
+  }
+  .process__text {
+    padding: 40px 57px;
+  }
+  .process__tag:nth-child(7) {
+    margin-left: 89px;
   }
 }

@@ -49,3 +49,37 @@ blockquote {
     margin-bottom: 30px;
   }
 }
+//------------------------------------------
+@media(min-width: 640px) {
+  .market {
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+  .market__img {
+    margin-top: -33px;
+  }
+}
+//------------------------------------------
+@media(min-width: 960px) {
+  .market__info {
+    width: 500px;
+  }
+  .market {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 106px;
+  }
+  .market__img {
+    margin-top: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    
+    img {
+      display: block;
+    }
+  }
+}

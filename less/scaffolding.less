@@ -159,6 +159,7 @@ h2 {
   h1 {
     margin-bottom: 11px;
     font-weight: 700;
+    font-size: 54px;
     letter-spacing: 5.4px;
     
     span {
@@ -174,6 +175,15 @@ h2 {
   .subtitle--blur::before {
     width: 640px;
     height: 640px;
+    top: 100%;
+  }
+}
+//------------------------------------------
+@media(min-width: 960px) {
+  .subtitle--blur::before {
+    width: 960px;
+    height: 960px;
+    top: 110%;
   }
 }
 //------------------------------------------

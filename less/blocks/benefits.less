@@ -48,3 +48,36 @@
     }
   }
 }
+//------------------------------------------
+@media(min-width: 640px) {
+  .benefits__title {
+    font-size: 90px;
+    letter-spacing: 9px;
+  }
+  .benefits__list {
+    padding-left: 94px;
+  }
+  .benefits__list li {
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -94px;
+    }
+  }
+}
+//------------------------------------------
+@media(min-width: 960px) {
+  .benefits__title {
+    margin-bottom: 48px;
+    font-size: 135px;
+    letter-spacing: 13.5px;
+  }
+  .benefits__list li {
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+    
+    &::before {
+      top: -5px;
+    }
+  }
+}

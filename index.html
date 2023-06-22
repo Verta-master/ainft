@@ -541,18 +541,25 @@
       onInitialized: counter,
       onChanged: counter,
       responsive:{
+        640: {
+          margin: 19,
+        },
         1280: {
-          margin: 60
+          margin: 60,
         }
       }
     })
     function counter(event) {
-    if (!event.namespace) {
-      return;
+      if (!event.namespace) {
+        return;
+      }
+      var slides = event.relatedTarget;
+      $('.partner__number').text('0' + (slides.relative(slides.current()) + 1) + ' / 0' + slides.items().length);
     }
-    var slides = event.relatedTarget;
-    $('.partner__number').text(slides.relative(slides.current()) + 1 + '/' + slides.items().length);
-  }
+    $('.partner__slider').find('.owl-nav').removeClass('disabled');
+    $('.partner__slider').on('changed.owl.carousel', function(event) {
+        $(this).find('.owl-nav').removeClass('disabled');
+    });
   </script>
 </body>
 </html>
