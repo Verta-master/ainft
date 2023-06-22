@@ -187,8 +187,131 @@ h2 {
   }
 }
 //------------------------------------------
+@media(min-width: 1024px) {
+  h1 {
+    font-size: 66px;
+    letter-spacing: 6.6px;
+    
+    span {
+      font-size: 42px;
+      letter-spacing: 4.2px;
+    }
+  }
+  h2 {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+  .subtitle {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 28px;
+    
+    &--blur::before {
+      width: 1024px;
+      height: 1024px;
+    }
+  }
+}
+//------------------------------------------
+@media(min-width: 1280px) {
+  .subtitle--blur::before {
+    width: 1280px;
+    height: 1280px;
+  }
+  main {
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1280px;
+      height: 1280px;
+      background-image: url(../img/images/header-bg-blur.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  h1 {
+    font-size: 76px;
+    letter-spacing: 7.6px;
+    
+    span {
+      font-size: 48px;
+      letter-spacing: 4.8px;
+    }
+  }
+  h2 {
+    margin-bottom: 20px;
+    font-size: 42px;
+    letter-spacing: 4.2px;
+  }
+  .subtitle {
+    margin-bottom: 60px;
+  }
+  .subtitle p {
+    margin-bottom: 28px;
+  }
+}
+//------------------------------------------
+@media(min-width: 1440px) {
+  h1 {
+    font-size: 84px;
+    letter-spacing: 8.4px;
+    
+    span {
+      font-size: 54px;
+      letter-spacing: 5.4px;
+    }
+  }
+  main::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1280px;
+    height: 1280px;
+    background-image: url(../img/images/header-bg-blur.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+//------------------------------------------
+@media(min-width: 1600px) {
+  main::before {
+    top: -50px;
+  }
+}
+//------------------------------------------
 @media(min-width:1920px) {
   body {
     font-size: 18px;
+  }
+  h1 {
+    margin-bottom: 24px;
+    font-size: 100px;
+    letter-spacing: 10px;
+    
+    span {
+      font-size: 64px;
+      letter-spacing: 6.4px;
+    }
+  }
+  h2 {
+    margin-bottom: 30px;
+    font-size: 44px;
+    letter-spacing: 4.4px;
+  }
+  .subtitle p {
+    margin-bottom: 36px;
   }
 }

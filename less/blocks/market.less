@@ -83,3 +83,51 @@ blockquote {
     }
   }
 }
+//------------------------------------------
+@media(min-width: 1024px) {
+  .market h2 {
+    margin-bottom: 40px;
+  }
+  .market__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  blockquote {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  blockquote,
+  .market__info {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .market {
+    padding-bottom: 148px;
+  }
+}
+//------------------------------------------
+@media(min-width: 1280px) {
+  .market__img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+    img {
+      height: 640px;
+      width: auto;
+      flex: 0 0 auto;
+      max-width: none;
+    }
+  }
+  .market {
+    padding-bottom: 136px;
+  }
+}
+//------------------------------------------
+@media(min-width: 1440px) {
+  .market {
+    padding-bottom: 130px;
+  }
+}
