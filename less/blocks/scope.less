@@ -1,5 +1,5 @@
 .scope {
-  margin-bottom: 100px;
+  margin-bottom: 86px;
   
   h2 {
     text-align: left;
@@ -117,4 +117,72 @@
 .fancybox-is-open .fancybox-bg {
   background: rgba(25, 17, 47, 0.6);
   opacity: 1;
+}
+.owl-theme .owl-nav .disabled {
+  opacity: 1;
+}
+//------------------------------------------
+@media(min-width: 640px) {
+  .scope {
+    margin-bottom: 116px;
+  }
+  .scope h2 {
+    width: 360px;
+    max-width: 100%;
+    position: relative;
+    
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &::before {
+      width: 34px;
+      height: 34px;
+      border-radius: 34px;
+      border: 2px solid #FF3BED;
+    }
+    &::after {
+      left: ~"calc(100% + 17px)";
+      width: 185px;
+      height: 1px;
+      background-color: #8A7FA8;
+    }
+  }
+  .scope__slider {
+    margin-top: 47px;
+    padding-bottom: 77px;
+    position: relative;
+    
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 40px;
+      bottom: 0;
+    }
+    &::before {
+      bottom: -17px;
+      width: 34px;
+      height: 34px;
+      border-radius: 34px;
+      border: 2px solid #FF3BED;
+    }
+    &::after {
+      left: 57px;
+      right: 40px;
+      height: 1px;
+      background-color: #8A7FA8;
+    }
+  }
+  .scope__slider .owl-nav button.owl-next, 
+  .scope__slider .owl-nav button.owl-prev {
+    top: -90px;
+  }
+  .scope__slider .owl-stage-outer {
+    padding-left: 40px;
+  }
 }

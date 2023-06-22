@@ -3,14 +3,14 @@
   
   .wrapper {
     position: relative;
-    padding-top: 109px;
+    padding-top: 107px;
     padding-bottom: 105px;
   }
 }
 .promo__subtitle {
   position: relative;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
@@ -41,7 +41,7 @@
   &--left {
     width: 156px;
     left: -104px;
-    bottom: 51px;
+    bottom: 45px;
   }
   &--top {
     width: 352px;
@@ -50,7 +50,7 @@
   }
   &--right {
     width: 270px;
-    bottom: 51px;
+    bottom: 45px;
     right: -204px;
   }
   &--round1 {
@@ -60,12 +60,23 @@
   }
   &--round2 {
     width: 18px;
-    right: 21px;
-    top: 88px;
+    right: 24px;
+    top: 84px;
+    transform: rotate(90deg);
   }
   &--round3 {
     width: 12px;
-    bottom: 78px;
+    bottom: 70px;
     left: 85px;
+    transform: rotate(-90deg);
+  }
+}
+//------------------------------------------
+@media(min-width: 640px) {
+  .promo__subtitle::before {
+    width: 640px;
+    height: 640px;
+    top: 50%;
+    transform: translate(-50%,-50%);
   }
 }

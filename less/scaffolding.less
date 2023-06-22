@@ -131,6 +131,9 @@ h2 {
   font-size: 14px;
   line-height: 26px;
   
+  p {
+    margin-bottom: 24px;
+  }
   &--blur {
     position: relative;
     padding-left: 10px;
@@ -151,6 +154,29 @@ h2 {
     }
   }
 }
+//------------------------------------------
+@media(min-width: 640px) {
+  h1 {
+    margin-bottom: 11px;
+    font-weight: 700;
+    letter-spacing: 5.4px;
+    
+    span {
+      margin-bottom: 11px;
+      font-size: 36px;
+      letter-spacing: 3.6px;
+    }
+  }
+  h2 {
+    font-size: 38px;
+    letter-spacing: 3.8px;
+  }
+  .subtitle--blur::before {
+    width: 640px;
+    height: 640px;
+  }
+}
+//------------------------------------------
 @media(min-width:1920px) {
   body {
     font-size: 18px;
