@@ -157,7 +157,7 @@
     }
     &::after {
       left: ~"calc(100% + 17px)";
-      width: 185px;
+      width: 180px;
       height: 1px;
       background-color: #8A7FA8;
     }
@@ -171,10 +171,10 @@
     &::after {
       content: "";
       position: absolute;
-      left: 40px;
       bottom: 0;
     }
     &::before {
+      left: ~"calc(50% - 280px)";
       bottom: -17px;
       width: 34px;
       height: 34px;
@@ -182,18 +182,22 @@
       border: 2px solid #FF3BED;
     }
     &::after {
-      left: 57px;
+      left: ~"calc(50% - 263px)";
       right: 0;
       height: 1px;
       background-color: #8A7FA8;
     }
   }
-  .scope__slider .owl-nav button.owl-next, 
+  .scope__slider .owl-nav button.owl-next {
+    top: -90px;
+    right: ~"calc(50% - 280px)";
+  }
   .scope__slider .owl-nav button.owl-prev {
     top: -90px;
+    right: ~"calc(50% - 222px)";
   }
   .scope__slider .owl-stage-outer {
-    padding-left: 40px;
+    padding-left: ~"calc(50% - 280px)";
   }
   .scope__modal {
     width: 540px;
@@ -205,10 +209,10 @@
     width: 440px;
   }
   .scope__slider .owl-nav button.owl-next {
-    right: 60px;
+    right: ~"calc(50% - 420px)";
   }
   .scope__slider .owl-nav button.owl-prev {
-    right: 134px;
+    right: ~"calc(50% - 340px)";
   }
   .scope__slider .owl-nav button.owl-next, 
   .scope__slider .owl-nav button.owl-prev {
@@ -217,25 +221,25 @@
     top: -94px;
   }
   .scope__slider .owl-stage-outer {
-    padding-left: 60px;
+    padding-left: ~"calc(50% - 420px)";
   }
   .scope__slider::after {
-    left: 77px;
+    left: ~"calc(50% - 403px)";
   }
   .scope__slider::before {
-    left: 60px;
+    left: ~"calc(50% - 420px)";
   }
 }
 //------------------------------------------
 @media(min-width: 1024px) {
   .scope__slider .owl-stage-outer {
-    padding-left: 80px;
+    padding-left: ~"calc(50% - 432px)";
   }
   .scope__slider::before {
-    left: 80px;
+    left: ~"calc(50% - 432px)";
   }
   .scope__slider::after {
-    left: 97px;
+    left: ~"calc(50% - 415px)";
   }
   .scope h2 {
     width: 376px;
@@ -244,16 +248,16 @@
     width: 444px;
   }
   .scope__slider .owl-nav button.owl-next {
-    right: 80px;
+    right: ~"calc(50% - 432px)";
   }
   .scope__slider .owl-nav button.owl-prev {
-    right: 164px;
+    right: ~"calc(50% - 352px)";
   }
 }
 //------------------------------------------
 @media(min-width: 1280px) {
   .scope__slider .owl-stage-outer {
-    padding-left: 100px;
+    padding-left: ~"calc(50% - 540px)";
   }
   .scope h2 {
     width: 394px;
@@ -262,16 +266,16 @@
     width: 642px;
   }
   .scope__slider::before {
-    left: 100px;
+    left: ~"calc(50% - 540px)";
   }
   .scope__slider::after {
-    left: 117px;
+    left: ~"calc(50% - 527px)";
   }
   .scope__slider .owl-nav button.owl-next {
-    right: 100px;
+    right: ~"calc(50% - 540px)";
   }
   .scope__slider .owl-nav button.owl-prev {
-    right: 184px;
+    right: ~"calc(50% - 456px)";
   }
   .scope {
     margin-bottom: 132px;
@@ -280,19 +284,19 @@
 //------------------------------------------
 @media(min-width: 1440px) {
   .scope__slider .owl-stage-outer {
-    padding-left: 120px;
+    padding-left: ~"calc(50% - 600px)";
   }
   .scope__slider::before {
-    left: 120px;
+    left: ~"calc(50% - 600px)";
   }
   .scope__slider::after {
-    left: 137px;
+    left: ~"calc(50% - 583px)";
   }
   .scope__slider .owl-nav button.owl-next {
-    right: 120px;
+    right: ~"calc(50% - 600px)";
   }
   .scope__slider .owl-nav button.owl-prev {
-    right: 204px;
+    right: ~"calc(50% - 516px)";
   }
   .scope h2::after {
     width: 762px;
@@ -304,19 +308,19 @@
 //------------------------------------------
 @media(min-width: 1600px) {
   .scope__slider .owl-stage-outer {
-    padding-left: 160px;
+    padding-left: ~"calc(50% - 640px)";
   }
   .scope__slider::before {
-    left: 160px;
+    left: ~"calc(50% - 640px)";
   }
   .scope__slider::after {
-    left: 177px;
+    left: ~"calc(50% - 623px)";
   }
   .scope__slider .owl-nav button.owl-next {
-    right: 160px;
+    right: ~"calc(50% - 640px)";
   }
   .scope__slider .owl-nav button.owl-prev {
-    right: 244px;
+    right: ~"calc(50% - 556px)";
   }
   .scope h2::after {
     width: 813px;
@@ -326,21 +330,6 @@
 @media(min-width:1920px) {
   .scope h2 {
     width: 411px;
-  }
-  .scope__slider .owl-stage-outer {
-    padding-left: 320px;
-  }
-  .scope__slider::before {
-    left: 320px;
-  }
-  .scope__slider::after {
-    left: 337px;
-  }
-  .scope__slider .owl-nav button.owl-next {
-    right: 320px;
-  }
-  .scope__slider .owl-nav button.owl-prev {
-    right: 404px;
   }
   .scope__title {
     font-size: 16px;
