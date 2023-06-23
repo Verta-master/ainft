@@ -15,6 +15,14 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
+  background-color: rgba(255,255,255,0);
+  background-image: url(../img/images/btn-invest.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  &::before {
+    display: none;
+  }
 }
 .invest__drop {
   position: absolute;
@@ -246,5 +254,42 @@
   }
   .invest__drop--round4 {
     left: 428px;
+  }
+}
+//------------------------------------------
+@media(min-width:1920px) {
+  .invest {
+    padding-top: 211px;
+  }
+  .invest .wrapper {
+    padding-bottom: 230px;
+  }
+  .invest__drop--right {
+    width: 290px;
+    right: -107px;
+  }
+  .invest__drop--left {
+    width: 400px;
+    left: -152px;
+  }
+  .invest__drop--round1 {
+    width: 82px;
+    left: 154px;
+    top: -63px;
+  }
+  .invest__drop--round2 {
+    width: 60px;
+    right: 129px;
+    top: 50px;
+  }
+  .invest__drop--round3 {
+    width: 46px;
+    bottom: 247px;
+    right: 370px;
+  }
+  .invest__drop--round4 {
+    width: 20px;
+    bottom: 292px;
+    left: 400px;
   }
 }
