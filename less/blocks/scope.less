@@ -292,14 +292,18 @@
   .scope__slider::after {
     left: ~"calc(50% - 583px)";
   }
-  .scope__slider .owl-nav button.owl-next {
-    right: ~"calc(50% - 600px)";
-  }
+//  .scope__slider .owl-nav button.owl-next {
+//    right: ~"calc(50% - 600px)";
+//  }
+//  .scope__slider .owl-nav button.owl-prev {
+//    right: ~"calc(50% - 516px)";
+//  }
+  .scope__slider .owl-nav button.owl-next,
   .scope__slider .owl-nav button.owl-prev {
-    right: ~"calc(50% - 516px)";
+    display: none;
   }
   .scope h2::after {
-    width: 762px;
+    width: 780px;
   }
   .scope {
     margin-bottom: 163px;
@@ -323,13 +327,16 @@
     right: ~"calc(50% - 556px)";
   }
   .scope h2::after {
-    width: 813px;
+    width: 865px;
   }
 }
 //------------------------------------------
 @media(min-width:1920px) {
   .scope h2 {
     width: 411px;
+  }
+  .scope h2::after {
+    width: 850px;
   }
   .scope__title {
     font-size: 16px;

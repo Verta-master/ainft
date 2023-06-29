@@ -22,6 +22,17 @@
         <div class="logo">
           <img src="img/images/logo.svg" alt="logo">
         </div>
+        <div class="lang">
+          <button type="button" class="lang__btn">RU</button>
+          <ul class="lang__list">
+            <li class="lang__item lang__item--disabled">
+              <a href="#" class="lang__link">RU</a>
+            </li>
+            <li class="lang__item">
+              <a href="#" class="lang__link">EN</a>
+            </li>
+          </ul>
+        </div>
         <button type="button" class="header__menu">
           <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="header__open">
             <path d="M0 7H28L26 9H0V7Z"/>
@@ -195,8 +206,8 @@
                 <li class="process__tag">
                   <a href="#" class="process__link">Медицина</a>
                 </li>
-                <li class="process__tag">
-                  <a href="#" class="process__link">Сельское хозяйство</a>
+                <li class="process__tag process__tag--active">
+                  <a href="#" class="process__link">Инвестирование</a>
                 </li>
                 <li class="process__tag">
                   <a href="#" class="process__link">Образование</a>
@@ -216,18 +227,17 @@
               <p class="process__title">AI 3 ранг</p>
               <div class="process__block">
                 <ul class="process__sublist">
-                  <li>растениеводство;</li>
-                  <li>животноводство;</li>
-                  <li>рыбоводство;</li>
-                  <li>сбор данных, прогнозирование и предотвращение негативных факторов;</li>
-                  <li>оптимизация в производстве продуктов питания и виноделии;</li>
-                  <li>прогнозирование хозяйства относительно внешних факторов (погоды, времени года, солнечной и лунной активности и тд).</li>
+                  <li>фундаментальный анализ рынка</li>
+                  <li>стратегии по инвестициям</li>
+                  <li>технический анализ рынка</li>
+                  <li>распознавание паттернов графиков</li>
+                  <li>торговые роботы</li>
                 </ul>
               </div>
             </li>
             <li class="process__item wow animate__fadeInUp" data-wow-offset="300">
               <p class="process__title">AI 4 ранг</p>
-              <div class="process__block">Узконаправленная нейронная сеть для решения практических задач в сельском хозяйстве</div>
+              <div class="process__block">Узконаправленная нейронная сеть для решения практических задач в инвестициях</div>
             </li>
           </ul>
         </div>
@@ -338,37 +348,6 @@
             <a href="#" class="btn btn--border scope__btn">добавить в Whitelist</a>
           </div>
 	    </div>
-	    <div class="item scope__slide">
-	      <a data-fancybox data-src="#scope7" href="javascript:;" class="scope__link">
-	        <figure class="scope__img">
-	          <img src="img/images/capsule-7.png" alt="Медицина">
-	        </figure>
-	        <p class="scope__title wow animate__fadeInUp" data-wow-offset="350">Медицина</p>
-	      </a>
-	      <div style="display: none;" id="scope7" class="scope__modal">
-            <figure class="scope__pic">
-              <img src="img/images/capsule-7.png" alt="Медицина">
-            </figure>
-            <p class="scope__name">Медицина</p>
-            <p>Узконаправленная нейронная сеть для решения практических задач в геймдеве</p>
-            <a href="#" class="btn btn--border scope__btn">добавить в Whitelist</a>
-          </div>
-	    </div>
-	    <div class="item scope__slide">
-	      <a data-fancybox data-src="#scope8" href="javascript:;" class="scope__link">
-	        <figure class="scope__img">
-	          <img src="img/images/capsule-7.png" alt="Разработка ПО">
-	        </figure>
-	        <p class="scope__title wow animate__fadeInUp" data-wow-offset="400">Разработка ПО</p>
-	      </a>
-	      <div style="display: none;" id="scope8" class="scope__modal">
-            <figure class="scope__pic">
-              <p class="scope__name">Разработка ПО</p>
-              <p>Узконаправленная нейронная сеть для решения практических задач в геймдеве</p>
-              <a href="#" class="btn btn--border scope__btn">добавить в Whitelist</a>
-            </figure>
-          </div>
-	    </div>
       </div>
     </section>
     
@@ -403,9 +382,9 @@
             <a href="#" class="btn partner__btn"><span>Стать партнером</span></a>
           </div>
           <div class="item partner__slide">
-            <p class="partner__goal">Инвесторам</p>
-            <p class="partner__title">Инвесторам AI NFT позволит получить высоколиквидный актив</p>
-            <p>Вкладывайте финансы в digital-собственность с потенциалом роста стоимости. Получайте прибыль от перепродажи NTF технологии конечному клиенту или обеспечьте стабильный доход от предоставления платного доступа по подписке.</p>
+            <p class="partner__goal">ЭКСПЕРТАМ</p>
+            <p class="partner__title">Экспертам в своих областях AI NFT позволит заработать на обучении кастомных нейросетей</p>
+            <p>Применяйте свои знания в узконаправленных областях для дообучения нейронных сетей, тем самым увеличивая их ценность.</p>
             <a href="#" class="btn partner__btn"><span>Стать партнером</span></a>
           </div>
         </div>
@@ -541,7 +520,8 @@
   
   <script>
     //Sliders
-    $('.scope__slider').owlCarousel({
+    var owl = $('.scope__slider');
+    owl.owlCarousel({
       margin: 20,
       nav: true,
       dots: false,
@@ -555,7 +535,7 @@
           margin: 40,
         }
       }
-    })
+    });
     
     $('.partner__slider').owlCarousel({
       margin: 10,
@@ -603,7 +583,11 @@
     $('body').attr('data-cursor','-lg');
     $('.btn').attr('data-cursor','-opaque');
     $('.process__link').attr('data-cursor','-opaque');
-    $('.scope__link').attr('data-cursor','-opaque');
+    
+    //Lang
+    $('.lang__btn').click(function() {
+      $('.lang__list').slideToggle();
+    })
   </script>
 </body>
 </html>

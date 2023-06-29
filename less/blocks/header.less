@@ -49,6 +49,44 @@
 .logo img {
   display: block;
 }
+.lang {
+  position: relative;
+  margin-left: auto;
+  margin-right: 20px;
+}
+.lang__link,
+.lang__btn {
+  color: #fff;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  
+  &:hover,
+  &:active {
+    color: #FF3BED;
+  }
+}
+.lang__list {
+  .reset();
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  padding-top: 5px;
+  display: none;
+}
+.lang__item {
+  margin-bottom: 3px;
+  
+  &--disabled {
+    .lang__link {
+      pointer-events: none;
+      opacity: 0.6;
+    }
+  }
+}
 //------------------------------------------
 @media(min-width: 1280px) {
   .header {
