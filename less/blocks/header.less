@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -8,10 +8,21 @@
   padding-bottom: 15px;
   .transition();
   
-  &--scroll {
-    background-color: rgba(255,255,255,0.05);
-    .transition();
+  &.can-animate {
+    transition: transform 0.3s ease, visibility 0s 0.3s linear;
   }
+  &.is-fixed {
+    background-color: rgba(255,255,255,0.05);
+    position: fixed;
+    transform: translate3d(0, -100%, 0);
+  }
+  &.scroll-up {
+    transform: translate3d(0, 0, 0);
+  }
+//  &--scroll {
+//    background-color: rgba(255,255,255,0.05);
+//    .transition();
+//  }
 }
 .header__wrap {
   display: flex;
